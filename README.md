@@ -58,3 +58,17 @@ You can override all the class names injected by Command-UI-Components thanks to
 |buttonAll.id|String||N|Button id. Equal to name if omitted. Locally unique|
 |buttonAll.isActive|Boolean|false|N|Should button selected|
 |onClick|Function||N|Accept two arguments: clicked button object and all selected button list|
+
+### 4. Header
+
+|Name|Type|Default|Required|Description|
+|:--:|:--:|:--:|:--:|:--:|
+|takeSpace|Boolean|false|N|Decide whether to take up space|
+|cityName|String||Y|The bus system in which city|
+|headline|string||Y|Site title|
+|menuList|Array||N|An array of meunList(the drop-down list)|
+|menuList.name|String||Y|Menu title|
+|menuList.id|Number||Y|The drop-dowm list identification number|
+|menuList.isActive|Boolean|false|Y|Support menuList clicked|
+|menuList.submenu|Array||N|Next level of drop-down list|
+|onMenuClick|Function||N|Accept one arguments: clicked menu name|
